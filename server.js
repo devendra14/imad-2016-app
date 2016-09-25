@@ -11,16 +11,16 @@ app.get('/', function (req, res) {
 
 
 
-app.get('/aeticle-one',function (req, res) {
+app.get('/article-one',function (req, res) {
 res.send('hello this is artical one'); 
 });
 
 
-app.get('/aeticle-two',function (req, res) {
+app.get('/article-two',function (req, res) {
 res.send('hello this is artical three'); 
 });
 
-app.get('/aeticle-three',function (req, res) {
+app.get('/article-three',function (req, res) {
 res.send('hello this is artical four'); 
 });
 
