@@ -17,11 +17,11 @@ res.send('hello this is artical one');
 
 
 app.get('/article-two',function (req, res) {
-res.send('hello this is artical three'); 
+res.send('hello this is artical two'); 
 });
 
 app.get('/article-three',function (req, res) {
-res.send('hello this is artical four'); 
+res.send('hello this is artical three'); 
 });
 
 
