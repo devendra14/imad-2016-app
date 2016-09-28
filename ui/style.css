@@ -19,14 +19,14 @@ body {
 .img-medium {
     height: 200px;
 }
-     .contenar{
+
+.contenar{
             max-width: 800px;
             margin:0 auto;
             color:#404040;
             font-family:sans serif;
-            pading-top:60px;
-            pading-left:60px;
-            pading-right:60px;
+            padding-top:60px;
+            padding-left:20px;
+            padding-right:20px;
         }
-
-
+    
