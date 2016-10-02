@@ -5,17 +5,35 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone = {
+var articles = {
+
+  articleone:{
     
     title: 'artecle one',
     heading: 'article one  ',
     date:'05/05/1996',
-    content:` <p>
-            this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
+    content:`<p>
+             this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
             </p>
             <p>
                  this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.   
             </p>`
+    },
+  articletwo:{title: 'artecle two',
+    heading: 'article two  ',
+    date:'05/05/1996',
+    content:`<p>
+             this is article two.
+            </p>
+            <p>
+                 this is article two.  
+            </p>`},
+  articlethree:{title: 'artecle three',
+    heading: 'article three ',
+    date:'05/05/1996',
+    content:`<p>
+             this is article three.
+           `},
 };
 function createtemplate (data)
 {
