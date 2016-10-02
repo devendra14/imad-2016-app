@@ -39,7 +39,6 @@ function createtemplate (data)
     var heading = data.heading;
     var date = data.date;
     var content =  data.content;
-     
     var htmltemplate =
          `<html>
            <head>
@@ -81,9 +80,9 @@ app.get('/', function (req, res) {
 
 app.get('/:articleNamee',function (req, res) {
     
-    var articleName = req.params.articleName;
+    var articleName1 = req.params.articleName;
     
-res.send(createtemplate(articles[articleName]));
+res.send(createtemplate(articles[articleName1]));
 });
 
 
