@@ -17,15 +17,16 @@ app.use(morgan('combined'));
 var articles = {
                                  'article-one' : {
     
-    title: 'artecle one',
-    heading: 'article one',
-    date:'05/05/1996',
-    content:`<p>
+    title : 'artecle one',
+    heading : 'article one',
+    date :'05/05/1996',
+    content :`<p>
              this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
             </p>`
 
     },
-                                 'article-two' : {title: 'artecle two',
+                                 'article-two' : {
+    title: 'artecle two',
     heading: 'article two  ',
     date:'05/05/1996',
     content:`<p>
@@ -90,7 +91,9 @@ app.get('/', function (req, res) {
 
 
 app.get('/:article-one',function (req, res) {
+    
     var articleName = req.params.articleName;
+    
 res.send(createtemplate(articles[articleName]));
 });
 
