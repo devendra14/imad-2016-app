@@ -40,8 +40,8 @@ function createtemplate (data)
     var date = data.date;
     var content =  data.content;
      
-    var htmltemplate = `
-         <html>
+    var htmltemplate =
+         `<html>
            <head>
                 <title> ${title}
                 </title>
@@ -71,7 +71,7 @@ function createtemplate (data)
            </body>
         </html>
     `;
-return htmltemplate;
+return createtemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
