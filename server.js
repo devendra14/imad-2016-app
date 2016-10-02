@@ -35,7 +35,7 @@ var articles = {
 
 function createtemplate (data)
 {
- var title = date.title;
+    var title = date.title;
     var heading = data.heading;
     var date = data.date;
     var content =  data.content;
@@ -46,9 +46,7 @@ function createtemplate (data)
                 </title>
                 <meta name="viewport" content="width=device-width , initial-scale-1"/>
                 <link href="/ui/style.css" rel="stylesheet" />
-               
             </head>
-        
             <body>
                <div class="contenar">
                     <div>
@@ -70,7 +68,7 @@ function createtemplate (data)
            </body>
         </html>
     `;
-return createtemplate;
+return htmltemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
