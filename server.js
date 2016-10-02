@@ -5,18 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-
-
-
-
-
-
-
-
 var articles = {
-                                 'article-one' : {
-    
+    'article-one' : {
     title : 'artecle one',
     heading : 'article one',
     date :'05/05/1996',
@@ -25,22 +15,21 @@ var articles = {
             </p>`
 
     },
-                                 'article-two' : {
+    'article-two' : {
     title: 'artecle two',
     heading: 'article two  ',
     date:'05/05/1996',
     content:`<p>
              this is article two.
             </p>
-            <p>
-                 this is article two.  
-            </p>`},
-                                 'article-three' : {title: 'artecle three',
+           `},
+    'article-three' : {
+    title: 'artecle three',
     heading: 'article three ',
     date:'05/05/1996',
     content:`<p>
              this is article three.
-           `},
+     `},
 };
 
 
@@ -91,9 +80,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/:article-one',function (req, res) {
-    
     var articleName = req.parans.articleName;
-    
 res.send(createtemplate(articles[articleName]));
 });
 
