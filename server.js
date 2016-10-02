@@ -14,22 +14,7 @@ var articles = {
              this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
             </p>`
 
-    },
-    'article-two' : {
-    title:'title two',
-    heading: 'article two  ',
-    date:'05/05/1996',
-    content:`<p>
-             this is article two.
-            </p>
-           `},
-    'article-three' : {
-    title:'title three',
-    heading: 'article three ',
-    date:'05/05/1996',
-    content:`<p>
-             this is article three.
-     `},
+    }
 };
 
 
