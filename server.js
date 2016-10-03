@@ -13,7 +13,7 @@ var article1 = {
     title:'hello article one title section',
     heading:'heading aerticle one',
     date: 'sep 05 2106',
-    content : `<p>article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
+    content : `<p>this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
 };
 
 function templat(data)
