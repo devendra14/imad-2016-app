@@ -16,17 +16,16 @@ var articleone = {
     heading:'heading aerticle one',
     date: 'sep 05 2106',
     content : `<p>
-             article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
+             article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.
             </p>`
 };
 
-function template (data){
+function template (data)
+{
 var title =data.title;
 var heading =data.heading;
 var date =data.date;
 var content  =data.content;
-
-
 var dev =
     `<html>
     <head>
