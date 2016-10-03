@@ -4,12 +4,6 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-
-app.get('/article-one',function (req, res) {
-res.send(templat(article1));
-});
-
    
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -30,39 +24,36 @@ var date =data.date;
 var content  =data.content;
 var dev =
     `<html>
-    <head>
-        <title> ${title}
-        </title>
-        <meta name="viewport" content="width=device-width , initial-scale-1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-</head>
-
-<body>
-    <div class="contenar">
-       <div>
-          <a href="/">home</a>
-       </div>
-     <hr/>
-     <h3>
-        ${heading}
-     </h3>
-           
-    <div>
+        <head>
+            <title> ${title}
+            </title>
+            <meta name="viewport" content="width=device-width , initial-scale-1"/>
+            <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+    <body>
+         <div class="contenar">
+           <div>
+              <a href="/">home</a>
+           </div>
+         <hr/>
+         <h3>
+           ${heading}
+         </h3>
+         <div>
                ${date}
-    </div> 
-    
-    <div>
-        ${content}
-           
-    </div>
-    </div>
-
-</body>
+         </div> 
+        <div>
+            ${content}
+        </div>
+        </div>
+   </body>
 </html>`;
-
-return templat;
+return dev;
 }
 
+app.get('/article-one',function (req, res) {
+res.send(templat(article1));
+});
 
 
 
