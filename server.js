@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 
 app.get('/:dev',function (req, res) {
     var dev= req.params.dev;
-    res.sendFile(path.join(__dirname, 'ui', 'dev'.html));
+
 });
 
 
