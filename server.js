@@ -62,7 +62,7 @@ return templates;
 }
 
 app.get('/article-one',function (req, res) {
-res.send(templates(articleone)); 
+res.sendFile(path.join(__dirname, 'ui', 'article-two.html')); 
 });
 
 
