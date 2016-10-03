@@ -9,29 +9,21 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-
-
-
 var articles={
 
-    'article-one':  
-    {
+    'article-one':{
             title:'hello article one title section',
             heading:'heading aerticle one',
             date: 'sep 05 2106',
             content : `<p>this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
        },
-       
- 'article-two':
-       {
+    'article-two':{
             title:'hello article two title section',
             heading:'heading aerticle two',
             date: 'sep 05 2106',
             content : `<p>this is article two. this is article two. this is article two. this is article two. this is article two. </p>`
        },
-
-    'article-three':
-       {
+    'article-three':{
             title:'hello article three title section',
             heading:'heading aerticle three',
             date: 'sep 05 2106',
@@ -79,10 +71,6 @@ app.get('/:articlename',function (req, res) {
 var dev=req.params.articlename;
 res.send(templat(articles[dev]));
 });
-
-
-
-
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
