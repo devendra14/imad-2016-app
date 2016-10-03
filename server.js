@@ -5,67 +5,17 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-    'article-one' : {
-    title:' title one',
-    heading : 'article one',
-    date :'05/05/1996',
-    content :`<p>
-             this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
-            </p>`
 
-    }
-};
-
-
-function createtemplate (data)
-{
-    var title = date.title;
-    var heading = data.heading;
-    var date = data.date;
-    var content =  data.content;
-    var htmltemplate =
-         `<html>
-           <head>
-                <title> ${title}
-                </title>
-                <meta name="viewport" content="width=device-width , initial-scale-1"/>
-                <link href="/ui/style.css" rel="stylesheet" />
-            </head>
-            <body>
-               <div class="contenar">
-                    <div>
-                      <a href="/">home</a>
-                    </div>
-                    <hr/>
-                    <h3>
-                       ${heading}
-                    </h3>
-                   
-                    <div>
-                       ${date}
-                    </div> 
-            
-                    <div>
-                      ${content}
-                    </div>
-               </div>
-           </body>
-        </html>
-    `;
-return htmltemplate;
-}
+   
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
 
-app.get('/:articleNamee',function (req, res) {
+app.get('/:article-one',function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
     
-    var articleName1 = req.params.articleName;
-    
-res.send(createtemplate(articles[articleName1]));
 });
 
 
