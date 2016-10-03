@@ -11,6 +11,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articleone = {
+    title:'hello article one title section',
+    heading:'heading aerticle one',
+    content : `<p>
+             article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
+            </p>`
+};
 
 app.get('/article-one',function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
