@@ -9,11 +9,35 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var article1 = {
-    title:'hello article one title section',
-    heading:'heading aerticle one',
-    date: 'sep 05 2106',
-    content : `<p>this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
+
+
+
+var articles={
+
+    articleone:  
+    {
+            title:'hello article one title section',
+            heading:'heading aerticle one',
+            date: 'sep 05 2106',
+            content : `<p>this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
+       },
+       
+ articletwo:
+       {
+            title:'hello article two title section',
+            heading:'heading aerticle two',
+            date: 'sep 05 2106',
+            content : `<p>this is article two. this is article two. this is article two. this is article two. this is article two. </p>`
+       },
+
+    articlethree:
+       {
+            title:'hello article three title section',
+            heading:'heading aerticle three',
+            date: 'sep 05 2106',
+            content : `<p>this is article three. this is article three.     this is article three.    this is article three.    this is article three.     </p>`
+       }
+   
 };
 
 function templat(data)
@@ -51,8 +75,9 @@ var dev =
 return dev;
 }
 
-app.get('/article-one',function (req, res) {
-res.send(templat(article1));
+app.get('/:articlename',function (req, res) {
+var dev=req.params.articlename;
+res.send(templat(articles[dev]));
 });
 
 
