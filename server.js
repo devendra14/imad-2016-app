@@ -15,7 +15,7 @@ var articleone = {
     title:'hello article one title section',
     heading:'heading aerticle one',
     date: 'sep 05 2106',
-    content : '<p>article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>'
+    content : `<p>article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
 };
 
 function templates(data)
