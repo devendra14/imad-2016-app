@@ -57,9 +57,8 @@ var dev =
     </div>
 
 </body>
-</html>
-`;
-return template;
+</html>`;
+return templates;
 }
 
 app.get('/article-one',function (req, res) {
