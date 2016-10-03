@@ -12,11 +12,6 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/:dev',function (req, res) {
-    var dev= req.params.dev;
-
-});
-
 
 app.get('/article-three',function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'article-three.html')); 
