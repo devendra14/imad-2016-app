@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 
 app.get('/:dev',function (req, res) {
     
-    var de= req.params.dev;
+    var dev= req.params.dev;
     
     res.send(dev);
 });
