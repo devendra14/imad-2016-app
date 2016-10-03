@@ -61,7 +61,7 @@ var dev =
 return templates;
 }
 
-app.get('/:article-one',function (req, res) {
+app.get('/article-one',function (req, res) {
 res.send(templates(articleone)); 
 });
 
