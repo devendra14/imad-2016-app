@@ -22,7 +22,7 @@ app.get('/:dev',function (req, res) {
     
     var de= req.params.dev;
     
-    res.send(de);
+    res.send(dev);
 });
 
 
