@@ -62,7 +62,7 @@ return templates;
 }
 
 app.get('/article-one',function (req, res) {
-res.send(template(articleone)); 
+res.send(templates(articleone)); 
 });
 
 
