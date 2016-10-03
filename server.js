@@ -61,7 +61,7 @@ var dev =
 return templates;
 }
 
-document.write('templates');
+document.write(templates[articleone]);
 
 app.get('/article-one',function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
