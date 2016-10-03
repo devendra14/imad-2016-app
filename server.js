@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 
 var articles={
 
-    articleone:  
+    'article-one':  
     {
             title:'hello article one title section',
             heading:'heading aerticle one',
@@ -22,7 +22,7 @@ var articles={
             content : `<p>this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
        },
        
- articletwo:
+ 'article-two':
        {
             title:'hello article two title section',
             heading:'heading aerticle two',
@@ -30,7 +30,7 @@ var articles={
             content : `<p>this is article two. this is article two. this is article two. this is article two. this is article two. </p>`
        },
 
-    articlethree:
+    'article-three':
        {
             title:'hello article three title section',
             heading:'heading aerticle three',
