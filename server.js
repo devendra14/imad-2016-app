@@ -14,13 +14,57 @@ app.get('/', function (req, res) {
 var articleone = {
     title:'hello article one title section',
     heading:'heading aerticle one',
+    date: 'sep 05 2106',
     content : `<p>
              article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one.    
             </p>`
 };
 
+function template (data){
+var title =data.title;
+var heading =data.heading;
+var date =data.date;
+var content  =data.content;
+
+
+var dev =
+    `<html>
+    <head>
+        <title> ${title}
+        </title>
+        <meta name="viewport" content="width=device-width , initial-scale-1"/>
+        <link href="/ui/style.css" rel="stylesheet" />
+       
+</head>
+
+<body>
+    <div class="contenar">
+       <div>
+          <a href="/">home</a>
+       </div>
+     <hr/>
+     <h3>
+        ${heading}
+     </h3>
+           
+    <div>
+               ${date}
+    </div> 
+    
+    <div>
+        ${content}
+           
+    </div>
+    </div>
+
+</body>
+</html>
+`;
+return template;
+}
+
 app.get('/article-one',function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
+res.send(template(articleone)); 
 });
 
 
