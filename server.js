@@ -11,14 +11,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articleone = {
+var article1 = {
     title:'hello article one title section',
     heading:'heading aerticle one',
     date: 'sep 05 2106',
     content : `<p>article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>`
 };
 
-function templates(data)
+function templat(data)
 {
 var title =data.title;
 var heading =data.heading;
@@ -56,11 +56,11 @@ var dev =
 </body>
 </html>`;
 
-return templates;
+return templat;
 }
 
 app.get('/article-one',function (req, res) {
-res.send(templates(articleone));
+res.send(templat(article1));
 });
 
 
