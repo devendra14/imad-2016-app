@@ -18,7 +18,7 @@ var articleone = {
     content : '<p>article one.    this is article one.    this is article one.    this is article one.    this is article one.    this is article one. </p>'
 };
 
-function templates (data)
+function templates(data)
 {
 var title =data.title;
 var heading =data.heading;
@@ -55,6 +55,7 @@ var dev =
 
 </body>
 </html>`;
+
 return templates;
 }
 
