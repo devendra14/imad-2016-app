@@ -8,6 +8,6 @@ madi.onclick= function()
 {
     
     
-madi.style.marginleft="100px";
+madi.style.marginleft="500px";
     
 };
