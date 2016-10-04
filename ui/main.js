@@ -5,9 +5,9 @@ element.innerHTML='this is a new value';
 //move image 
 var image = document.getElementById("dev");
 
+ var marginLeft=0;
+
 function moveRight() {
-    var marginLeft=0;
-    
     marginLeft= marginLeft+10;
     image.style.marginLeft = marginLeft + 'px';
 }
@@ -15,6 +15,6 @@ function moveRight() {
 image.onclick= function()
 {
     
-var interval = setinterval(moveRight , 100);
+  var interval = setinterval(moveRight, 100);
 
 };
