@@ -3,8 +3,8 @@ console.log('Loaded!');
 var element=document.getElementById('main-text');
 element.innerHTML='this is a new value';
 //move image 
-var image = document.getElementById('madi');
-madi.onclick= function()
+var img = document.getElementById('madi');
+img.onclick= function()
 {
     
     
