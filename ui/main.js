@@ -10,7 +10,7 @@ function moveRight() {
     das.style.marginLeft = marginLeft + 'px';
 }
 
-image.onclick= function()
+das.onclick= function()
 {
     
   var interval = setinterval(moveRight, 10);
