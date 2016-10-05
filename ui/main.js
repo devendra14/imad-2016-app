@@ -1,20 +1,18 @@
-console.log('Loaded!');
-// change the text main div
-var element=document.getElementById('main-text');
-element.innerHTML='this is a new value';
-//move image 
-var das= document.getElementById('dev');
- var marginLeft=0;
- 
-function moveRight()
- {
-    marginLeft= marginLeft+5;
-    das.style.marginLeft = marginLeft + 'px';
- }
-
-das.onclick= function()
+//counter code
+var button= document.getElementById('counter');
+button.onclick = function()
 {
     
-  var interval = setInterval(moveRight, 5);
-
+    //make a requst to the counter end point
+    
+    
+    //capchure the response
+    
+    
+    //render the veriable to the currect span
+    
+    counter=counter+1;
+    var span=document.getElementById('count');
+    span.innerHTML=counter.toString();
+    
 };
