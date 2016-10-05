@@ -8,7 +8,7 @@ var das= document.getElementById('dev');
  
 function moveRight()
  {
-    marginLeft= marginLeft+10;
+    marginLeft= marginLeft+5;
     das.style.marginLeft = marginLeft + 'px';
  }
 
