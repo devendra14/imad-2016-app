@@ -11,7 +11,7 @@ button.onclick = function()
     
     //render the veriable to the currect span
     
-    counter=counter + 3;
+    counter = counter + 3;
     var span=document.getElementById('count');
     span.innerHTML = counter.toString();
     
