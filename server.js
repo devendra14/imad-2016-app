@@ -67,15 +67,16 @@ var dev =
 return dev;
 }
 
-app.get('/:articlename',function (req, res) {
-var dev=req.params.articlename;
-res.send(templat(articles[dev]));
+app.get('/:articlename',function (req, res) 
+{
+  var dev=req.params.articlename;
+  res.send(templat(articles[dev]));
 });
 
 
 
 
- var counter=0;
+ var counter = 0;
  app.get('/counter',function (req, res) {
  counter=counter+1;
  res.send(counter.toString());   
