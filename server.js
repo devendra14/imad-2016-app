@@ -67,11 +67,6 @@ var dev =
 return dev;
 }
 
-app.get('/:articlename',function (req, res) 
-{
-  var dev=req.params.articlename;
-  res.send(templat(articles[dev]));
-});
 
 
 
@@ -81,6 +76,19 @@ app.get('/:articlename',function (req, res)
  counter=counter+1;
  res.send(counter.toString());   
 });
+
+
+
+
+app.get('/:articlename',function (req, res) 
+{
+  var dev=req.params.articlename;
+  res.send(templat(articles[dev]));
+});
+
+
+
+
 
 
 
