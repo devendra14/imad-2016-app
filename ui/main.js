@@ -2,7 +2,7 @@
 var button= document.getElementById('counter');
 button.onclick = function()
 {
-    //make a requst to the counter end point
+    //creat a requst
     var request = new XMLHttpRequest();
     //capchure the response
     request.onreadystatechange = function()
@@ -15,8 +15,11 @@ button.onclick = function()
               var counter =request.responseText;
               var span=document.getElementById('count');
               span.innerHTML = counter.toString();
-            }
+           }
         }
+        //not done yet
     };
-   
+   //make a requst 
+   request.open('GET','http://devendra14.imad.hasura-app.io/counter', true);
+   request.send(null);
 };
