@@ -25,7 +25,7 @@ button.onclick = function()
 };
 //submit name
 var nameInput = document.getElementById('name');
-var name = nameinput.value;
+var name = nameInput.value;
 var submit = document.getElementById('sumit_btn');
 submit.onclick = function()
   {
