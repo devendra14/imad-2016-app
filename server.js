@@ -20,7 +20,7 @@ var articles={
             heading:'heading aerticle two',
             date: 'sep 05 2106',
             content : `<p>this is article two. this is article two. this is article two. this is article two. this is article two. </p>`
-       },
+       }, 
     'article-three':{
             title:'hello article three title section',
             heading:'heading aerticle three',
