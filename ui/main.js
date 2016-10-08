@@ -12,24 +12,8 @@ button.onclick = function()
            //take some action
            if(request.status ===200)
            {
-              var counter =request.responseText;
-              var span=document.getElementById('count');
-              span.innerHTML = counter.toString();
-           }
-        }
-        //not done yet
-    };
-   //make a requst 
-   request.open('GET','http://devendra14.imad.hasura-app.io/counter', true);
-   request.send(null);
-};
-//submit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
-var submit = document.getElementById('submit_btn');
-submit.onclick = function()
-    {
-      //make a request to the server and send the name
+               
+                     //make a request to the server and send the name
       var names = ['name1','name2','name3','name4'];
       var list='';
       for(var i=0; i<names.length;   i++)
@@ -38,5 +22,20 @@ submit.onclick = function()
        }
       var ul = document.getElementById('namelist');
       ul.innerHTML = list;
-      //capture a list of name and render it as a list
-   };
+              
+           }
+        }
+        //not done yet
+    };
+   //make a requst 
+   request.open('GET','http://devendra14.imad.hasura-app.io/submit?name='+name, true);
+   request.send(null);
+};
+//submit name
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function()
+    {
+
+};
