@@ -88,9 +88,9 @@ app.get('/', function (req, res)
 
  
  
-app.get('/:articlename/:name',function (req, res) 
+app.get('/:articlename',function (req, res) 
 {
-  var dev=req.params.name;
+  var dev=req.params.articlename;
   res.send(templat(articles[dev]));
 });
 
